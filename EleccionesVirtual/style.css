@@ -1,0 +1,912 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+}
+#ContenedorPadre{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img{
+    width: 90px;
+}
+
+.img2{
+    width: 150px;
+    height: 70px;
+}
+
+#titulo{
+    width: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color:black;
+}
+
+
+
+hr{
+    border: none;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*BANNER*/
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*MAIN*/
+
+
+main{
+    margin-top: -70px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.container{
+    margin-left: 30px;
+    grid-gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarjeta img{
+    width: 100%;
+    height: 400px;
+}
+
+#tarjeta{
+    height: 60%;
+    width: 350px;
+    border: solid black 1px;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+#tarjeta h2{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#tarjeta p{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    background-color: #fa6b0b;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+button:hover{
+    background-color:orangered;
+}
+
+/*VENTANAS*/
+
+.contenedor img{
+    width: 500px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+#image-sena{
+    width: 70px;
+    height: 70px;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay3{
+    background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay4{
+    background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.informacion{
+    margin-top: 40px;
+}
+
+#container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nombre{
+    text-align: center;
+    margin-bottom: 10px;
+    transition: .5s ease all;
+    transform: translateY(500px) scale(0.7);
+}
+
+
+
+#jornada{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(71, 68, 68);
+}
+
+
+.programa{
+    margin-bottom: 10px;
+
+
+}
+
+#ficha{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+
+
+i{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 5;
+    padding-top: 15px;
+    padding-right: 15px;
+    color: orangered;
+    width: 10px;
+    height: 10px;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.overlay2.active{
+    visibility: visible;
+}
+
+.overlay3.active{
+    visibility: visible;
+}
+
+.overlay4.active{
+    visibility: visible;
+}
+
+
+.programa{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.container-prop{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+#propuestas-p{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#propuestas img{
+    width: 30px;
+}
+
+#viñetas{
+    width: 30px;
+
+}
+
+
+.popup{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    width: 80%;
+    height: 90%;
+    transition: .5s ease all;
+    transform: translateY(500px) scale(0.7);
+    opacity: 0;
+}
+
+
+
+
+.popup .informacion{
+    overflow-y: scroll;
+}
+
+.popup2 .informacion{
+    overflow-y: scroll;
+}
+
+
+.popup3 .informacion{
+    overflow-y: scroll;
+}
+
+.popup4 .informacion{
+    overflow-y: scroll;
+}
+
+.popup2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    width: 80%;
+    height: 90%;
+    transition: .5s ease all;
+    transform: translateY(500px) scale(0.7);
+    opacity: 0;
+}
+
+.popup3{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    width: 80%;
+    height: 90%;
+    transition: .5s ease all;
+    transform: translateY(500px) scale(0.7);
+    opacity: 0;
+}
+
+.popup4{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    width: 80%;
+    height: 90%;
+    transition: .5s ease all;
+    transform: translateY(500px) scale(0.7);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+.popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup.active h2{
+    animation: entradaTitulo .5s ease .0s forwards;
+}
+.popup.active h3{
+    animation: entradaSubtitulo .5s ease .0s forwards;
+}
+
+
+.overlay.abierto{
+    visibility: visible;
+}
+
+.popup.abierto{
+    opacity: 1;
+}
+/**/
+.popup2.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup2.active h2{
+    animation: entradaTitulo .5s ease .0s forwards;
+}
+.popup2.active h3{
+    animation: entradaSubtitulo .5s ease .0s forwards;
+}
+
+.overlay2.abierto{
+    visibility: visible;
+}
+
+.popup2.abierto{
+    opacity: 1;
+}
+/**/
+
+.popup3.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup3.active h2{
+    animation: entradaTitulo .5s ease .0s forwards;
+}
+.popup3.active h3{
+    animation: entradaSubtitulo .5s ease .0s forwards;
+}
+
+.overlay3.abierto{
+    visibility: visible;
+}
+
+.popup3.abierto{
+    opacity: 1;
+}
+/**/
+
+
+.popup4.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup4.active h2{
+    animation: entradaTitulo .5s ease .0s forwards;
+}
+.popup4.active h3{
+    animation: entradaSubtitulo .5s ease .0s forwards;
+}
+
+.overlay4.abierto{
+    visibility: visible;
+}
+
+.popup4.abierto{
+    opacity: 1;
+}
+
+
+
+
+
+
+@keyframes entradaTitulo{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entradaSubtitulo{
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*FOOTER*/
+
+footer{
+    width: 100%;    
+    text-align: center;
+    color: black;
+    border-top: solid black 1px;
+    background-color: rgb(225, 223, 223);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    
+}
+
+footer .logos img{
+    width: 50px;
+    height: 40px;
+}
+
+footer .logos #bienestar{
+    width: 80px;
+}
+
+
+
+
+/*MediaQueries*/
+
+@media (max-width: 1200px){
+
+    .fecha{
+        margin-right: 10px;
+    }
+
+    /*Popups*/
+
+    .popup{
+        width: 90%;
+        height: 90%;
+    }
+
+    .image img{
+        width: 420px;
+    }
+
+
+
+
+    /**/
+
+    .popup2{
+        width: 90%;
+        height: 90%;
+    }
+
+    .image img{
+        width: 420px;
+    }
+    /**/
+
+    .popup3{
+        width: 90%;
+        height: 90%;
+    }
+
+    .image img{
+        width: 420px;
+    }
+
+
+    /**/
+
+    .popup4{
+        width: 90%;
+        height: 90%;
+    }
+
+    .image img{
+        width: 420px;
+    }
+
+    #ContenedorImg{
+        margin-left: 30px;
+        width: 30%;
+    }
+
+    #titulo{
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 900px){
+
+        /*Header*/
+
+
+        #ContenedorImg{
+            margin-left: 40px;
+            
+        }
+
+        .img2{
+            display: none;
+        }
+    
+      
+    
+        #titulo{
+            font-size: 8px;
+            margin-right: 30px;
+            margin-left: -40px;
+        }
+    
+        #programa-p{
+            font-weight: bold;
+        }
+
+            /*Banner*/
+
+
+        .banner img{
+            width: 100%;
+        }
+
+                    
+            /*Popups*/
+
+            .popup{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+                transition: .2s ease all;
+                transform: scale(0.7);
+                opacity: 0;
+            }
+        
+        
+        
+        
+            /**/
+        
+            .popup2{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+                transition: .2s ease all;
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            /**/
+        
+            .popup3{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+                transition: .2s ease all;
+                transform: scale(0.7);
+                opacity: 0;
+            }
+        
+            /**/
+        
+            .popup4{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+                transition: .2s ease all;
+                transform: scale(0.7);
+                opacity: 0;
+            }
+
+            .image img{
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                margin-top: 50px;
+        
+            }
+
+
+
+}
+
+@media (max-width: 600px){
+
+    /*Header*/
+
+    .img{
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .img2{
+        display: none;
+    }
+  
+
+    #titulo{
+        font-size: 8px;
+        margin-right: 20px;
+        width: 400px;
+    }
+
+    .fecha{
+        display: none;
+    }
+    #programa-p{
+        font-weight: bold;
+    }
+
+    /*Banner*/
+
+
+    .banner img{
+        width: 100%;
+    }
+
+
+    /*main*/
+
+    main{
+        margin-top: -8%;
+    }
+
+
+
+
+    .image img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 50px;
+
+    }
+
+    .programa{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    #propuestas{
+        margin-bottom: 40px;
+    }
+
+
+
+    #candi{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+    #programa{
+        text-align: center;
+    }
+
+    .popup{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        transition: .2s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+
+
+
+    /**/
+
+    .popup2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        transition: .2s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    /**/
+
+    .popup3{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        transition: .2s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    /**/
+
+    .popup4{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        transition: .2s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+
+    footer{
+
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .logos{
+        margin: 10px;
+    }
+
+    footer p{
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+
+}
+
+
+@media (max-width: 400px){
+
+    #tarjeta{
+        margin-right: 25px;
+        height: 50%;
+
+    }
+
+
+    #container-info{
+        margin-left: 20px;
+        width: 90%;
+    }
+
+
+    #ContenedorImg img{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+    }
+
+    #programa-p{
+        font-weight: bold;
+    }
+
+    .img2{
+        visibility: hidden;
+    }
+
+    .img{
+        margin-top: 50px;
+    }
+
+    #ContenedorImg{
+        margin-right: 30px;
+    }
+
+  
+
+    #titulo{
+        font-size: 7px;
+        margin-right: 20px;
+        width: 400px;
+    }
+
+
+
+    .programa{
+        padding-right: 40px;
+    }
+
+
+
+
+
+    footer{
+        height: 23%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .logos{
+        margin: 10px;
+    }
+
+    footer p{
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+}
